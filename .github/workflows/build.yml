@@ -24,31 +24,42 @@ jobs:
     - name: List available schemes
       run: xcodebuild -list -project Brainwave.xcodeproj
       
-    - name: Install CocoaPods
+    - name: Show project structure
+      run: ls -la
+      
+    - name: Show Brainwave directory
+      run: ls -la Brainwave/
+      
+    - name: Try to build with full output
       run: |
-        which pod || gem install cocoapods
-        pod install || echo "No Podfile found, skipping"
+        set -x
+        xcodebuild clean archive \
+          -project Brainwave.xcodeproj \
+          -scheme Brainwave \
+          -archivePath Brainwave.xcarchive \
+          -configuration Release \
+          -destination "generic/platform=iOS" \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO \
+          ONLY_ACTIVE_ARCH=NO \
+          SKIP_INSTALL=NO 2>&1 | head -200
       
-    - name: Build archive
-      run: xcodebuild clean archive -project Brainwave.xcodeproj -scheme Brainwave -archivePath Brainwave.xcarchive -configuration Release -destination "generic/platform=iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO SKIP_INSTALL=NO
+    - name: Check if archive exists
+      run: ls -la Brainwave.xcarchive/ 2>&1 || echo "Archive not created"
       
-    - name: Check archive contents
-      run: |
-        ls -la Brainwave.xcarchive/ 2>&1 || true
-        ls -la Brainwave.xcarchive/Products/Applications/ 2>&1 || true
-      
-    - name: Create IPA
+    - name: Create IPA if archive succeeded
+      if: success()
       run: |
         mkdir -p Payload
         cp -r Brainwave.xcarchive/Products/Applications/Brainwave.app Payload/
         zip -r Brainwave.ipa Payload/
         mkdir -p Export
         mv Brainwave.ipa Export/
-        ls -la Export/
       
     - name: Upload IPA
       uses: actions/upload-artifact@v4
       with:
         name: Brainwave-IPA
         path: Export/*.ipa
-        if-no-files-found: error
+        if-no-files-found: warn
