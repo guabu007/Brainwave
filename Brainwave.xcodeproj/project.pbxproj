@@ -13,7 +13,7 @@
 		00C302ED2A1B8533005D5A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C302EC2A1B8533005D5A8E /* Assets.xcassets */; };
 		00C302F02A1B8533005D5A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C302EF2A1B8533005D5A8E /* LaunchScreen.storyboard */; };
 		00C302F32A1B8533005D5A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C302F22A1B8533005D5A8E /* Main.storyboard */; };
-		00C302F62A1B8533005D5A8E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C302F52A1B8533005D5A8E /* Info.plist */; };
+		 = {isa = PBXBuildFile; fileRef = 00C302F52A1B8533005D5A8E /* Info.plist */; };
 		00F958E62A1B904F00D368A0 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958E52A1B904F00D368A0 /* AudioRecorder.swift */; };
 		00F958E92A1B906500D368A0 /* WhisperTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958E82A1B906500D368A0 /* WhisperTranscriber.swift */; };
 		00F958EC2A1B907B00D368A0 /* ObsidianManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958EB2A1B907B00D368A0 /* ObsidianManager.swift */; };
@@ -155,7 +155,7 @@
 				00C302ED2A1B8533005D5A8E /* Assets.xcassets in Resources */,
 				00C302F02A1B8533005D5A8E /* LaunchScreen.storyboard in Resources */,
 				00C302F32A1B8533005D5A8E /* Main.storyboard in Resources */,
-				00C302F62A1B8533005D5A8E /* Info.plist in Resources */,
+				,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
