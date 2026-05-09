@@ -1,375 +1,380 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 56;
-	objects = {
+archiveVersion = 1;
+classes = {
+};
+objectVersion = 56;
+objects = {
 
 /* Begin PBXBuildFile section */
-		00C302E42A1B8533005D5A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C302E32A1B8533005D5A8E /* AppDelegate.swift */; };
-		00C302E72A1B8533005D5A8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C302E62A1B8533005D5A8E /* SceneDelegate.swift */; };
-		00C302EA2A1B8533005D5A8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C302E92A1B8533005D5A8E /* ViewController.swift */; };
-		00C302ED2A1B8533005D5A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C302EC2A1B8533005D5A8E /* Assets.xcassets */; };
-		00C302F02A1B8533005D5A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C302EF2A1B8533005D5A8E /* LaunchScreen.storyboard */; };
-		00C302F32A1B8533005D5A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C302F22A1B8533005D5A8E /* Main.storyboard */; };
-		 = {isa = PBXBuildFile; fileRef = 00C302F52A1B8533005D5A8E /* Info.plist */; };
-		00F958E62A1B904F00D368A0 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958E52A1B904F00D368A0 /* AudioRecorder.swift */; };
-		00F958E92A1B906500D368A0 /* WhisperTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958E82A1B906500D368A0 /* WhisperTranscriber.swift */; };
-		00F958EC2A1B907B00D368A0 /* ObsidianManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958EB2A1B907B00D368A0 /* ObsidianManager.swift */; };
-		00F958EF2A1B909100D368A0 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958EE2A1B909100D368A0 /* RecordingViewController.swift */; };
+00C302E42A1B8533005D5A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C302E32A1B8533005D5A8E /* AppDelegate.swift */; };
+00C302E72A1B8533005D5A8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C302E62A1B8533005D5A8E /* SceneDelegate.swift */; };
+00C302EA2A1B8533005D5A8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C302E92A1B8533005D5A8E /* ViewController.swift */; };
+00C302ED2A1B8533005D5A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C302EC2A1B8533005D5A8E /* Assets.xcassets */; };
+00C302F02A1B8533005D5A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C302EF2A1B8533005D5A8E /* LaunchScreen.storyboard */; };
+00C302F32A1B8533005D5A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C302F22A1B8533005D5A8E /* Main.storyboard */; };
+00F958E62A1B904F00D368A0 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958E52A1B904F00D368A0 /* AudioRecorder.swift */; };
+00F958E92A1B906500D368A0 /* WhisperTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958E82A1B906500D368A0 /* WhisperTranscriber.swift */; };
+00F958EC2A1B907B00D368A0 /* ObsidianManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958EB2A1B907B00D368A0 /* ObsidianManager.swift */; };
+00F958EF2A1B909100D368A0 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F958EE2A1B909100D368A0 /* RecordingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00C302E32A1B8533005D5A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00C302E62A1B8533005D5A8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00C302E92A1B8533005D5A8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00C302EC2A1B8533005D5A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00C302EF2A1B8533005D5A8E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		00C302F22A1B8533005D5A8E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		00C302F52A1B8533005D5A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00C302F82A1B8533005D5A8E /* Brainwave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainwave.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00F958E52A1B904F00D368A0 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
-		00F958E82A1B906500D368A0 /* WhisperTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperTranscriber.swift; sourceTree = "<group>"; };
-		00F958EB2A1B907B00D368A0 /* ObsidianManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsidianManager.swift; sourceTree = "<group>"; };
-		00F958EE2A1B909100D368A0 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+00C302E32A1B8533005D5A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+00C302E62A1B8533005D5A8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+00C302E92A1B8533005D5A8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+00C302EC2A1B8533005D5A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+00C302EF2A1B8533005D5A8E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+00C302F22A1B8533005D5A8E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+00C302F52A1B8533005D5A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+00C302F82A1B8533005D5A8E /* Brainwave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainwave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+00F958E52A1B904F00D368A0 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+00F958E82A1B906500D368A0 /* WhisperTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperTranscriber.swift; sourceTree = "<group>"; };
+00F958EB2A1B907B00D368A0 /* ObsidianManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsidianManager.swift; sourceTree = "<group>"; };
+00F958EE2A1B909100D368A0 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00C302D92A1B8533005D5A8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+00C302D92A1B8533005D5A8E /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00C302D42A1B8533005D5A8E = {
-			isa = PBXGroup;
-			children = (
-				00C302E22A1B8533005D5A8E /* Brainwave */,
-				00C302F72A1B8533005D5A8E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		00C302E22A1B8533005D5A8E /* Brainwave */ = {
-			isa = PBXGroup;
-			children = (
-				00C302E32A1B8533005D5A8E /* AppDelegate.swift */,
-				00C302E62A1B8533005D5A8E /* SceneDelegate.swift */,
-				00C302E92A1B8533005D5A8E /* ViewController.swift */,
-				00C302EC2A1B8533005D5A8E /* Assets.xcassets */,
-				00C302EF2A1B8533005D5A8E /* LaunchScreen.storyboard */,
-				00C302F22A1B8533005D5A8E /* Main.storyboard */,
-				00C302F52A1B8533005D5A8E /* Info.plist */,
-				00F958E42A1B904F00D368A0 /* Services */,
-				00F958ED2A1B909100D368A0 /* ViewControllers */,
-			);
-			sourceTree = "<group>";
-		};
-		00C302F72A1B8533005D5A8E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				00C302F82A1B8533005D5A8E /* Brainwave.app */,
-			);
-			sourceTree = "<group>";
-		};
-		00F958E42A1B904F00D368A0 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				00F958E52A1B904F00D368A0 /* AudioRecorder.swift */,
-				00F958E82A1B906500D368A0 /* WhisperTranscriber.swift */,
-				00F958EB2A1B907B00D368A0 /* ObsidianManager.swift */,
-			);
-			sourceTree = "<group>";
-		};
-		00F958ED2A1B909100D368A0 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				00F958EE2A1B909100D368A0 /* RecordingViewController.swift */,
-			);
-			sourceTree = "<group>";
-		};
+00C302D42A1B8533005D5A8E = {
+isa = PBXGroup;
+children = (
+00C302E22A1B8533005D5A8E /* Brainwave */,
+00C302F72A1B8533005D5A8E /* Products */,
+);
+sourceTree = "<group>";
+};
+00C302E22A1B8533005D5A8E /* Brainwave */ = {
+isa = PBXGroup;
+children = (
+00C302E32A1B8533005D5A8E /* AppDelegate.swift */,
+00C302E62A1B8533005D5A8E /* SceneDelegate.swift */,
+00C302E92A1B8533005D5A8E /* ViewController.swift */,
+00C302EC2A1B8533005D5A8E /* Assets.xcassets */,
+00C302EF2A1B8533005D5A8E /* LaunchScreen.storyboard */,
+00C302F22A1B8533005D5A8E /* Main.storyboard */,
+00C302F52A1B8533005D5A8E /* Info.plist */,
+00F958E42A1B904F00D368A0 /* Services */,
+00F958ED2A1B909100D368A0 /* ViewControllers */,
+);
+sourceTree = "<group>";
+};
+00C302F72A1B8533005D5A8E /* Products */ = {
+isa = PBXGroup;
+children = (
+00C302F82A1B8533005D5A8E /* Brainwave.app */,
+);
+sourceTree = "<group>";
+};
+00F958E42A1B904F00D368A0 /* Services */ = {
+isa = PBXGroup;
+children = (
+00F958E52A1B904F00D368A0 /* AudioRecorder.swift */,
+00F958E82A1B906500D368A0 /* WhisperTranscriber.swift */,
+00F958EB2A1B907B00D368A0 /* ObsidianManager.swift */,
+);
+sourceTree = "<group>";
+};
+00F958ED2A1B909100D368A0 /* ViewControllers */ = {
+isa = PBXGroup;
+children = (
+00F958EE2A1B909100D368A0 /* RecordingViewController.swift */,
+);
+sourceTree = "<group>";
+};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00C302F92A1B8533005D5A8E /* Brainwave */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00C303012A1B8533005D5A8E /* Build configuration list for PBXNativeTarget "Brainwave" */;
-			buildPhases = (
-				00C302D82A1B8533005D5A8E /* Sources */,
-				00C302D92A1B8533005D5A8E /* Frameworks */,
-				00C302DA2A1B8533005D5A8E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Brainwave;
-			productName = Brainwave;
-			productReference = 00C302F82A1B8533005D5A8E /* Brainwave.app */;
-			productType = "com.apple.product-type.application";
-		};
+00C302F92A1B8533005D5A8E /* Brainwave */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = 00C303012A1B8533005D5A8E /* Build configuration list for PBXNativeTarget "Brainwave" */;
+buildPhases = (
+00C302D82A1B8533005D5A8E /* Sources */,
+00C302D92A1B8533005D5A8E /* Frameworks */,
+00C302DA2A1B8533005D5A8E /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = Brainwave;
+productName = Brainwave;
+productReference = 00C302F82A1B8533005D5A8E /* Brainwave.app */;
+productType = "com.apple.product-type.application";
+};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		00C302D32A1B8533005D5A8E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
-				OrganizationName = "Brainwave";
-				TargetAttributes = {
-					00C302F92A1B8533005D5A8E = {
-						CreatedOnToolsVersion = 15.1;
-					};
-				};
-			};
-			buildConfigurationList = 00C302DC2A1B8533005D5A8E /* Build configuration list for PBXProject "Brainwave" */;
-			compatibilityVersion = "Xcode 15.0";
-			developmentRegion = "zh-CN";
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				"zh-CN",
-				en,
-				Base,
-			);
-			mainGroup = 00C302D42A1B8533005D5A8E;
-			productRefGroup = 00C302F72A1B8533005D5A8E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				00C302F92A1B8533005D5A8E /* Brainwave */,
-			);
-		};
+00C302D32A1B8533005D5A8E /* Project object */ = {
+isa = PBXProject;
+attributes = {
+BuildIndependentTargetsInParallel = 1;
+LastSwiftUpdateCheck = 1510;
+LastUpgradeCheck = 1510;
+OrganizationName = "Brainwave";
+TargetAttributes = {
+00C302F92A1B8533005D5A8E = {
+CreatedOnToolsVersion = 15.1;
+};
+};
+};
+buildConfigurationList = 00C302DC2A1B8533005D5A8E /* Build configuration list for PBXProject "Brainwave" */;
+compatibilityVersion = "Xcode 15.0";
+developmentRegion = "zh-CN";
+hasScannedForEncodings = 0;
+knownRegions = (
+"zh-CN",
+en,
+Base,
+);
+mainGroup = 00C302D42A1B8533005D5A8E;
+productRefGroup = 00C302F72A1B8533005D5A8E /* Products */;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+00C302F92A1B8533005D5A8E /* Brainwave */,
+);
+};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00C302DA2A1B8533005D5A8E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00C302ED2A1B8533005D5A8E /* Assets.xcassets in Resources */,
-				00C302F02A1B8533005D5A8E /* LaunchScreen.storyboard in Resources */,
-				00C302F32A1B8533005D5A8E /* Main.storyboard in Resources */,
-							);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+00C302DA2A1B8533005D5A8E /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+00C302ED2A1B8533005D5A8E /* Assets.xcassets in Resources */,
+00C302F02A1B8533005D5A8E /* LaunchScreen.storyboard in Resources */,
+00C302F32A1B8533005D5A8E /* Main.storyboard in Resources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00C302D82A1B8533005D5A8E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00C302E42A1B8533005D5A8E /* AppDelegate.swift in Sources */,
-				00C302E72A1B8533005D5A8E /* SceneDelegate.swift in Sources */,
-				00C302EA2A1B8533005D5A8E /* ViewController.swift in Sources */,
-				00F958E62A1B904F00D368A0 /* AudioRecorder.swift in Sources */,
-				00F958E92A1B906500D368A0 /* WhisperTranscriber.swift in Sources */,
-				00F958EC2A1B907B00D368A0 /* ObsidianManager.swift in Sources */,
-				00F958EF2A1B909100D368A0 /* RecordingViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+00C302D82A1B8533005D5A8E /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+00C302E42A1B8533005D5A8E /* AppDelegate.swift in Sources */,
+00C302E72A1B8533005D5A8E /* SceneDelegate.swift in Sources */,
+00C302EA2A1B8533005D5A8E /* ViewController.swift in Sources */,
+00F958E62A1B904F00D368A0 /* AudioRecorder.swift in Sources */,
+00F958E92A1B906500D368A0 /* WhisperTranscriber.swift in Sources */,
+00F958EC2A1B907B00D368A0 /* ObsidianManager.swift in Sources */,
+00F958EF2A1B909100D368A0 /* RecordingViewController.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		00C302DD2A1B8533005D5A8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-fmodules",
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					"AVFoundation",
-					"-framework",
-					"CoreAudio",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainwave.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		00C302DE2A1B8533005D5A8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_CFLAGS = (
-					"-fmodules",
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					"AVFoundation",
-					"-framework",
-					"CoreAudio",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainwave.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		00C302FF2A1B8533005D5A8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Brainwave/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainwave.app;
-				PRODUCT_NAME = Brainwave;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		00C303002A1B8533005D5A8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Brainwave/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainwave.app;
-				PRODUCT_NAME = Brainwave;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+00C302DD2A1B8533005D5A8E /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_ENABLE_OBJC_WEAK = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+CURRENT_PROJECT_VERSION = 1;
+DEAD_CODE_STRIPPING = YES;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+ENABLE_TESTABILITY = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_DYNAMIC_NO_PIC = NO;
+GCC_OPTIMIZATION_LEVEL = 0;
+GCC_PREPROCESSOR_DEFINITIONS = (
+"DEBUG=1",
+"$(inherited)",
+);
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+INFOPLIST_FILE = "Brainwave/Info.plist";
+IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+MACOSX_DEPLOYMENT_TARGET = 10.15;
+MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+MTL_FAST_MATH = YES;
+ONLY_ACTIVE_ARCH = YES;
+OTHER_LDFLAGS = "-ObjC";
+PRODUCT_BUNDLE_IDENTIFIER = "com.brainwave.app";
+PRODUCT_NAME = "$(TARGET_NAME)";
+SDKROOT = iphoneos;
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+TARGETED_DEVICE_FAMILY = "1,2";
+VALIDATE_PRODUCT = YES;
+};
+name = Debug;
+};
+00C302DE2A1B8533005D5A8E /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_ENABLE_OBJC_WEAK = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+CURRENT_PROJECT_VERSION = 1;
+DEAD_CODE_STRIPPING = YES;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_NS_ASSERTIONS = NO;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_PREPROCESSOR_DEFINITIONS = (
+"$(inherited)",
+);
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+INFOPLIST_FILE = "Brainwave/Info.plist";
+IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+MACOSX_DEPLOYMENT_TARGET = 10.15;
+MTL_ENABLE_DEBUG_INFO = NO;
+MTL_FAST_MATH = YES;
+OTHER_LDFLAGS = "-ObjC";
+PRODUCT_BUNDLE_IDENTIFIER = "com.brainwave.app";
+PRODUCT_NAME = "$(TARGET_NAME)";
+SDKROOT = iphoneos;
+SWIFT_COMPILATION_MODE = wholemodule;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+TARGETED_DEVICE_FAMILY = "1,2";
+VALIDATE_PRODUCT = YES;
+};
+name = Release;
+};
+00C302FF2A1B8533005D5A8E /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_ENTITLEMENTS = "";
+CODE_SIGN_IDENTITY = "";
+CODE_SIGN_STYLE = Automatic;
+INFOPLIST_FILE = "Brainwave/Info.plist";
+IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = "com.brainwave.app";
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Debug;
+};
+00C303002A1B8533005D5A8E /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_ENTITLEMENTS = "";
+CODE_SIGN_IDENTITY = "";
+CODE_SIGN_STYLE = Automatic;
+INFOPLIST_FILE = "Brainwave/Info.plist";
+IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = "com.brainwave.app";
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Release;
+};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00C302DC2A1B8533005D5A8E /* Build configuration list for PBXProject "Brainwave" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00C302DD2A1B8533005D5A8E /* Debug */,
-				00C302DE2A1B8533005D5A8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00C303012A1B8533005D5A8E /* Build configuration list for PBXNativeTarget "Brainwave" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00C302FF2A1B8533005D5A8E /* Debug */,
-				00C303002A1B8533005D5A8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+00C302DC2A1B8533005D5A8E /* Build configuration list for PBXProject "Brainwave" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+00C302DD2A1B8533005D5A8E /* Debug */,
+00C302DE2A1B8533005D5A8E /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+00C303012A1B8533005D5A8E /* Build configuration list for PBXNativeTarget "Brainwave" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+00C302FF2A1B8533005D5A8E /* Debug */,
+00C303002A1B8533005D5A8E /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
 /* End XCConfigurationList section */
-	};
-	rootObject = 00C302D32A1B8533005D5A8E /* Project object */;
+};
+rootObject = 00C302D32A1B8533005D5A8E /* Project object */;
 }
