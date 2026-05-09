@@ -24,86 +24,31 @@ jobs:
     - name: List available schemes
       run: xcodebuild -list -project Brainwave.xcodeproj
       
-    - name: Build archive without signing
+    - name: Install CocoaPods
       run: |
-        xcodebuild clean -project Brainwave.xcodeproj -scheme Brainwave -configuration Release
-        xcodebuild archive \
-          -project Brainwave.xcodeproj \
-          -scheme Brainwave \
-          -archivePath Brainwave.xcarchive \
-          -configuration Release \
-          -destination "generic/platform=iOS" \
-          CODE_SIGN_IDENTITY="" \
-          CODE_SIGNING_REQUIRED=NO \
-          CODE_SIGNING_ALLOWED=NO \
-          ONLY_ACTIVE_ARCH=NO \
-          SKIP_INSTALL=NO
-          
-    - name: Create export options plist
+        which pod || gem install cocoapods
+        pod install || echo "No Podfile found, skipping"
+      
+    - name: Build archive
+      run: xcodebuild clean archive -project Brainwave.xcodeproj -scheme Brainwave -archivePath Brainwave.xcarchive -configuration Release -destination "generic/platform=iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO SKIP_INSTALL=NO
+      
+    - name: Check archive contents
       run: |
-        cat > exportOptions.plist << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>method</key>
-    <string>development</string>
-    <key>signingStyle</key>
-    <string>manual</string>
-    <key>teamID</key>
-    <string>0000000000</string>
-    <key>provisioningProfiles</key>
-    <dict>
-        <key>com.example.Brainwave</key>
-        <string>Wildcard Development</string>
-    </dict>
-    <key>signingCertificate</key>
-    <string>iPhone Developer</string>
-    <key>stripSwiftSymbols</key>
-    <true/>
-    <key>uploadBitcode</key>
-    <false/>
-    <key>compileBitcode</key>
-    <false/>
-</dict>
-</plist>
-EOF
-          
-    - name: Export IPA (may fail due to missing signing - expected)
+        ls -la Brainwave.xcarchive/ 2>&1 || true
+        ls -la Brainwave.xcarchive/Products/Applications/ 2>&1 || true
+      
+    - name: Create IPA
       run: |
+        mkdir -p Payload
+        cp -r Brainwave.xcarchive/Products/Applications/Brainwave.app Payload/
+        zip -r Brainwave.ipa Payload/
         mkdir -p Export
-        xcodebuild -exportArchive \
-          -archivePath Brainwave.xcarchive \
-          -exportPath Export \
-          -exportOptionsPlist exportOptions.plist 2>&1 || echo "Export completed (signing skipped)"
-          
-    - name: Check Export directory contents
-      run: ls -la Export/ || echo "Export directory empty"
+        mv Brainwave.ipa Export/
+        ls -la Export/
       
-    - name: Try alternative export method
-      run: |
-        if [ -d "Brainwave.xcarchive/Products/Applications/" ]; then
-          mkdir -p Payload
-          cp -r Brainwave.xcarchive/Products/Applications/Brainwave.app Payload/
-          zip -r Brainwave.ipa Payload/
-          mkdir -p Export
-          mv Brainwave.ipa Export/
-          echo "IPA created successfully"
-        else
-          echo "App bundle not found"
-          ls -la Brainwave.xcarchive/Products/Applications/ 2>&1 || true
-        fi
-      
-    - name: Upload IPA artifact
+    - name: Upload IPA
       uses: actions/upload-artifact@v4
       with:
         name: Brainwave-IPA
         path: Export/*.ipa
-        if-no-files-found: warn
-        
-    - name: Upload xcarchive as fallback
-      uses: actions/upload-artifact@v4
-      with:
-        name: Brainwave-xcarchive
-        path: Brainwave.xcarchive
-        if-no-files-found: warn
+        if-no-files-found: error
