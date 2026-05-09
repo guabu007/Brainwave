@@ -155,8 +155,7 @@
 				00C302ED2A1B8533005D5A8E /* Assets.xcassets in Resources */,
 				00C302F02A1B8533005D5A8E /* LaunchScreen.storyboard in Resources */,
 				00C302F32A1B8533005D5A8E /* Main.storyboard in Resources */,
-				,
-			);
+							);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
